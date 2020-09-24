@@ -8,6 +8,7 @@ cache:
 before_script:
   - rm -f test/readme.clj
   - echo y | sudo lein upgrade
+  - sudo apt-get install leiningen
 script: lein test-all
 jdk:
   - openjdk7
